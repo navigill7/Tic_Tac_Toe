@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+
+}
+nav{
+    background-color: #04364a;
+    color: #176B87;
+    height: 65px;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-family: 'Shadows Into Light', cursive;
+}
+nav ul{
+    list-style-type: none;
+}
+.line{
+    background-color: black;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background-color: #04364a;
+    transition: width 1s ease-in-out;
+}
+
+.gameContainer{
+    /* background-color: #64CCC5; */
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    position: relative;
+}
+.container{
+    display: grid;
+    grid-template-rows: repeat(3 , 10vw);
+    grid-template-columns: repeat(3 , 10vw);
+    font-family: 'shadow Into Light' , cursive;
+
+
+}
+.gameInfo{
+    font-family: 'shadow Into Light', cursive;
+    padding: 0 34px;
+}
+.gameInfo h1{
+    font-size: 2.5rem;
+}
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.box:hover{
+    background-color: #c0e2ec;
+}
+.imgbox img{
+    width: 0;
+    transition: width 1.5s ease-in-out;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+/* Base button styles */
+#reset {
+    font-family: 'shadow Into Light', cursive;
+    margin-left: 10px;
+    display: inline-block;
+    padding: 5px 10px; /* Adjust padding as needed */
+    font-size: 10px; /* Adjust font size as needed */
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #176B87;; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 4px; /* Rounded corners for a modern look */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for color changes */
+  }
+  
+  /* Button hover effect */
+  #reset:hover {
+    background-color: #64CCC5; /* Darker background color on hover */
+  }
+  
+  /* Button focus effect (for accessibility) */
+  #reset:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.7); /* Add a subtle box-shadow on focus */
+  }
+
+@media screen and (max-width: 950px)
+{
+    .gameContainer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 34px;
+    }
+    .gameInfo h1{
+        font-size: 1.5rem;
+    }
+    .container{
+        display: grid;
+        grid-template-rows: repeat(3 , 20vw);
+        grid-template-columns: repeat(3 , 20vw);
+    }
+}
+  
